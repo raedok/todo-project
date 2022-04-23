@@ -29,3 +29,31 @@ if(userAge > 0){
 }
 
 
+//task 6
+
+let answers = [];
+
+
+function getAnswers(){
+    let q1 = questions("do you this the first time vist my web sit ");
+    let q2 = questions("do you like my web sit");
+    let q3 = questions("do you think my web sit is helpfull");
+    answers = [q1, q2 ,q3]
+}
+getAnswers();
+
+function questions(myQues) {
+    let answers = prompt (myQues);
+    if(answers != 'yes' && answers != 'no') {
+        return 'invalid';
+    }
+    return answers;
+}
+
+function logAnswers(arr) {
+    for (let i=0; i < arr.length; i++) {
+        console.log(arr[i])
+    }
+}
+
+logAnswers(answers);
