@@ -1,4 +1,4 @@
-// console.log("Hello from java script");
+console.log("Hello from java script");
 var myname = "Raad";
 var age = "26";
 alert("Hello my name is " + myname);
@@ -27,3 +27,5 @@ if(userAge > 0){
 }else{
     alert("not valid age try agin");
 }
+
+
